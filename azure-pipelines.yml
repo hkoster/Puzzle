@@ -1,0 +1,29 @@
+name: $(Date:yyyyMMdd).$(Rev:.r)
+# resources:
+#   containers: [ containerResource ]
+#   repositories: [ repositoryResource ]
+# variables: { string: string } | [ variable ]
+# trigger: trigger
+# pr: pr
+jobs:
+
+- job: MyJob
+  displayName: My First Job
+  continueOnError: true
+  workspace:
+    clean: outputs
+  steps:
+  - script: echo My first job
+  # .NET Core
+  # Restore NuGet packages.
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'restore'
+      projects: '**/*.csproj'
+      #verbosityRestore: 'detailed' # Options: quiet, minimal, normal, detailed, diagnostic
+
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'build'
+      projects: '**/*.csproj'
+      #verbosityRestore: 'detailed' # Options: quiet, minimal, normal, detailed, diagnostic
