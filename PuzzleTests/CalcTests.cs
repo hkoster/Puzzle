@@ -19,13 +19,6 @@ namespace PuzzleTests
             Assert.Equal(5, c.Add(2, 3));
         }
 
-        [Fact]
-        public void ThreeMinusOneIsTwo()
-        {
-            var c = new Calc();
-            Assert.Equal(2, c.Substract(3, 1));
-        }
-
         [Theory]
         [InlineData(0, 0, 0)]
         [InlineData(0, 1, 1)]
@@ -39,6 +32,14 @@ namespace PuzzleTests
             Assert.Equal(expected, c.Add(value1, value2));
         }
 
+        [Fact]
+        public void ThreeMinusOneIsTwo()
+        {
+            var c = new Calc();
+            Assert.Equal(2, c.Substract(3, 1));
+        }
+
+
         [Theory]
         [InlineData(0, 0, 0)]
         [InlineData(10, 1, 9)]
@@ -47,6 +48,20 @@ namespace PuzzleTests
         {
             var c = new Calc();
             Assert.Equal(expected, c.Substract(value1, value2));
+        }
+
+        [Fact]
+        public void TenDividedByTwoIsFive()
+        {
+            var c = new Calc();
+            Assert.Equal(5, c.Divide(10, 2));
+        }
+
+        [Fact]
+        public void TwoTimesFiveIsTen()
+        {
+            var c = new Calc();
+            Assert.Equal(10, c.Multiply(2, 5));
         }
     }
 }

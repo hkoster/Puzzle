@@ -1,18 +1,24 @@
-SF:/home/hkoster/Documents/Projects/Puzzel/Puzzle/Calc.cs
-FN:5,System.Int32 Puzzle.Calc::Add(System.Int32,System.Int32)
-FNDA:2,System.Int32 Puzzle.Calc::Add(System.Int32,System.Int32)
-DA:6,2
-FN:7,System.Int32 Puzzle.Calc::Substract(System.Int32,System.Int32)
-FNDA:1,System.Int32 Puzzle.Calc::Substract(System.Int32,System.Int32)
-DA:8,1
-LF:2
-LH:2
+SF:/home/hkoster/Projects/Puzzle/Puzzle/Calc.cs
+FN:7,System.Int32 Puzzle.Calc::Add(System.Int32,System.Int32)
+FNDA:8,System.Int32 Puzzle.Calc::Add(System.Int32,System.Int32)
+DA:8,8
+FN:9,System.Int32 Puzzle.Calc::Substract(System.Int32,System.Int32)
+FNDA:4,System.Int32 Puzzle.Calc::Substract(System.Int32,System.Int32)
+DA:10,4
+FN:11,System.Int32 Puzzle.Calc::Divide(System.Int32,System.Int32)
+FNDA:1,System.Int32 Puzzle.Calc::Divide(System.Int32,System.Int32)
+DA:12,1
+FN:13,System.Int32 Puzzle.Calc::Multiply(System.Int32,System.Int32)
+FNDA:1,System.Int32 Puzzle.Calc::Multiply(System.Int32,System.Int32)
+DA:14,1
+LF:4
+LH:4
 BRF:0
 BRH:0
-FNF:2
-FNH:2
+FNF:4
+FNH:4
 end_of_record
-SF:/home/hkoster/Documents/Projects/Puzzel/Puzzle/WoordZoeker.cs
+SF:/home/hkoster/Projects/Puzzle/Puzzle/WoordZoeker.cs
 FN:13,System.Void Puzzle.WoordZoeker::Init(System.Int32,System.Int32)
 FNDA:1,System.Void Puzzle.WoordZoeker::Init(System.Int32,System.Int32)
 DA:14,1
